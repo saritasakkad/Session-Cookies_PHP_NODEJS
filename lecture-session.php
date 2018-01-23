@@ -20,8 +20,11 @@ session_start();
        <?php
         $prenom = $_SESSION["prenom"];
         $nom = $_SESSION["nom"];
-        echo "les données du formulaire ont été mémorisées.<br>";
-        echo "<a href=\"lecture-session.php\">Cliquez sur ce lien pour vérifier.</a>";
+        echo "les données mémorisées dans les variable de session sont 
+        bien accessibles :<br><ul>";
+        echo "<li>\$_SESSION[\"prenom\"] vaut ".$_SESSION["prenom"] . "</li>";
+        echo "<li>\$_SESSION[\"nom\"] vaut ".$_SESSION["nom"] . "</li></ul>";
+
        ?>
     </body>
 

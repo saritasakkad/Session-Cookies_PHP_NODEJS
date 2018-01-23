@@ -20,8 +20,8 @@ session_start();
        <?php
         $prenom = htmlspecialchars($_POST["prenom"]);
         $nom = htmlspecialchars($_POST["nom"]);
-        $_SESSION['prenom'] = 'Akkad';
-        $_SESSION['nom'] = 'BeCode';
+        $_SESSION['prenom'] = $prenom;
+        $_SESSION['nom'] = $nom;
         echo "les données du formulaire ont été mémorisées.<br>";
         echo "<a href=\"lecture-session.php\">Cliquez sur ce lien pour vérifier.</a>";
        ?>
