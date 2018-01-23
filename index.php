@@ -39,6 +39,13 @@ $_SESSION['age'] = 75;
 
     </p>
 
+    <form action="login.php" method="post">
+       Votre login : <input type="text" name="login">
+        <br />
+       Votre mot de passé : <input type="password" name="password"><br />
+      <input type="submit" value="Connexion">
+    </form>
+    
     <p>
 
         <a href="mapage.php">Lien vers mapage.php</a><br />
