@@ -1,9 +1,14 @@
 <?php
-    if (isset($_POST["prenom"]))
-        setcookie("prenom", $_POST["prenom"], time()+24*3600, null, null, false, true);
+include 'config.php';
+include 'connexion.php';
+include 'request.php';
 
-    if (isset($_POST["nom"]))
-        setcookie("nom", $_POST["nom"], time()+24*3600, null, null, false, true);
+
+    if (isset($_POST["username"]))
+        setcookie("username", $_POST["username"], time()+24*3600, null, null, false, true);
+
+    if (isset($_POST["name"]))
+        setcookie("name", $_POST["name"], time()+24*3600, null, null, false, true);
 
 ?>
 

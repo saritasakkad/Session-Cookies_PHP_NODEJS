@@ -1,4 +1,11 @@
+
+
 <?php
+
+include 'config.php';
+include 'connexion.php';
+include 'request.php';
+
 
 session_start();
 
@@ -18,10 +25,10 @@ session_start();
 
     <body>
        <?php
-        $prenom = htmlspecialchars($_POST["prenom"]);
-        $nom = htmlspecialchars($_POST["nom"]);
-        $_SESSION['prenom'] = $prenom;
-        $_SESSION['nom'] = $nom;
+        $username = htmlspecialchars($_POST["username"]);
+        $name = htmlspecialchars($_POST["name"]);
+        $_SESSION['username'] = $username;
+        $_SESSION['name'] = $name;
         echo "les données du formulaire ont été mémorisées.<br>";
         echo "<a href=\"lecture-session.php\">Cliquez sur ce lien pour vérifier.</a>";
        ?>

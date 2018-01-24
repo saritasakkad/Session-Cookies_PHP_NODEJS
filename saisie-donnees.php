@@ -1,3 +1,11 @@
+<?php
+
+include 'config.php';
+include 'connexion.php';
+include 'request.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +17,10 @@
 <body>
     <form name="MonFormulaire"  method="post" action="traitement.php">
         <label>Prénom</label>
-         <input type="text" name="prenom">
+         <input type="text" name="username">
         <label>Nom</label>
-         <input type="text" name="nom">
-        <input type="submit" name="Nom" value="Envoyer">
+         <input type="text" name="name">
+        <input type="submit" name="users" value="Envoyer">
     </form>
 </body>
 </html>

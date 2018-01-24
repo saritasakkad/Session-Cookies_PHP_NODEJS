@@ -1,4 +1,7 @@
 <?php
+include 'config.php';
+include 'connexion.php';
+include 'request.php';
 
 session_start();
 
@@ -18,12 +21,12 @@ session_start();
 
     <body>
        <?php
-        $prenom = $_SESSION["prenom"];
-        $nom = $_SESSION["nom"];
+        $prenom = $_SESSION["username"];
+        $nom = $_SESSION["name"];
         echo "les données mémorisées dans les variable de session sont 
         bien accessibles :<br><ul>";
-        echo "<li>\$_SESSION[\"prenom\"] vaut ".$_SESSION["prenom"] . "</li>";
-        echo "<li>\$_SESSION[\"nom\"] vaut ".$_SESSION["nom"] . "</li></ul>";
+        echo "<li>\$_SESSION[\"username\"] vaut ".$_SESSION["username"] . "</li>";
+        echo "<li>\$_SESSION[\"name\"] vaut ".$_SESSION["name"] . "</li></ul>";
 
        ?>
     </body>

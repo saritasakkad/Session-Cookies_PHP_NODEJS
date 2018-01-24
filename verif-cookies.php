@@ -1,3 +1,11 @@
+<?php
+
+include 'config.php';
+include 'connexion.php';
+include 'request.php';
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -12,8 +20,8 @@
 
     <body>
        <?php
-        echo "Le cookie prenom a pour valeur ".$_COOKIE["prenom"]."<br>";
-        echo "Le cookie nom a pour valeur ".$_COOKIE["nom"]."<br>";
+        echo "Le cookie prenom a pour valeur ".$_COOKIE["username"]."<br>";
+        echo "Le cookie nom a pour valeur ".$_COOKIE["name"]."<br>";
        ?>
     </body>
 
